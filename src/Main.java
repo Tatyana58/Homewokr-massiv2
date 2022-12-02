@@ -50,6 +50,10 @@ public class Main {
         **Важно**: не используйте дополнительные массивы для решения этой задачи. Необходимо корректно пройти по массиву циклом
          и распечатать его элементы в правильном порядке.
          */
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length-1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
     }
     public static int max(int[] arr){
         int x=arr[0];
