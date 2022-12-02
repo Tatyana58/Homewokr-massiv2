@@ -13,7 +13,7 @@ public class Main {
         Нужно написать программу, которая решит эту задачу, и вывести в консоль результат
         в формате: «Сумма трат за месяц составила … рублей».
          */
-        int sumExpenses=0;
+        float sumExpenses=0;
         for (int i = 0; i < arr.length; i++) {
             sumExpenses += arr[i];
         }
@@ -32,8 +32,9 @@ public class Main {
         **Важно помнить:** подсчет среднего значения может иметь остаток (то есть быть не целым, адробным числом).
         */
         float averageMonthlyExpenditure = sumExpenses/30;
-        System.out.println("Средняя сумма трат за месяц составила "+averageMonthlyExpenditure+" рублей");
+        System.out.print("Средняя сумма трат за месяц составила ");
         System.out.printf("%.2f",averageMonthlyExpenditure);
+        System.out.print(" рублей");
     }
     public static int max(int[] arr){
         int x=arr[0];
