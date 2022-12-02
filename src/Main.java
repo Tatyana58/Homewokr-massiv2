@@ -31,9 +31,9 @@ public class Main {
         поделить на количество дней), и вывести в консоль результат в формате: «Средняя сумма трат за месяц составила … рублей».
         **Важно помнить:** подсчет среднего значения может иметь остаток (то есть быть не целым, адробным числом).
         */
-        double averageMonthlyExpenditure = sumExpenses/30;
+        float averageMonthlyExpenditure = sumExpenses/30;
         System.out.println("Средняя сумма трат за месяц составила "+averageMonthlyExpenditure+" рублей");
-
+        System.out.printf("%.2f",averageMonthlyExpenditure);
     }
     public static int max(int[] arr){
         int x=arr[0];
