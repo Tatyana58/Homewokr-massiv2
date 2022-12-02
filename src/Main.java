@@ -7,6 +7,16 @@ public class Main {
         int [] arr=new int[5];
         fillRandom(arr);
         System.out.println(Arrays.toString(arr));
+        /*### Задание 1
+        Первым делом бухгалтеры попросили посчитать сумму всех выплат за месяц.
+        Нужно написать программу, которая решит эту задачу, и вывести в консоль результат
+        в формате: «Сумма трат за месяц составила … рублей».
+         */
+        int sumExpenses=0;
+        for (int i = 0; i < arr.length; i++) {
+            sumExpenses+=arr[i];
+        }
+        System.out.println("Сумма трат за месяц составила "+sumExpenses+" рублей.");
     }
 
     private static void fillRandom(int[] arr) { //заполнение массива случайными числами
