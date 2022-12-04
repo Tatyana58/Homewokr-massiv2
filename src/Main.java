@@ -4,7 +4,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Дамашняя работа: Массивы 2");
-        int[] arr = new int[15];
+        int[] arr = new int[30];
         fillRandom(arr);
         System.out.println(Arrays.toString(arr));
         System.out.println("Задание 1");
@@ -25,7 +25,7 @@ public class Main {
         в формате: «Минимальная сумма трат за день составила … рублей. Максимальная сумма трат за день составила … рублей».
          */
         System.out.println("Минимальная сумма трат за день составила " + min(arr) + " рублей.");
-        System.out.println("Максимальная сумма трат за день составила " + max(arr) + " рублей.");
+        System.out.println("Максимальная сумма трат за день составила " + max(arr) + " рублей.\n");
         System.out.println("Задание 3");
         /*### Задание 3
         А теперь нам нужно понять, какую в среднем сумму наша компания тратила в течение данных 30 дней.
@@ -36,7 +36,7 @@ public class Main {
         float averageMonthlyExpenditure = sumExpenses/30;
         System.out.print("Средняя сумма трат за месяц составила ");
         System.out.printf("%.2f",averageMonthlyExpenditure);
-        System.out.println(" рублей");
+        System.out.println(" рублей\n");
         System.out.println("Задание 4");
         /*### Задание 4
         Отойдем от подсчетов.
